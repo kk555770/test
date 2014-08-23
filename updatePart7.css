@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;line-height:15px}
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,AppleGothic,sans-serif;font-size:12px;color:#4a4e4e}
+img,fieldset{border:0}
+img,input[type=checkbox]{vertical-align:top}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none;color:#4a4e4e}
+a:hover,a:active,a:focus{border:0;text-decoration:underline;color:#4a4e4e}
+legend{display:none}
+table{border-collapse:collapse}
+.blind{visibility:hidden;overflow:hidden;position:relative;width:0;height:0;font-size:0;line-height:0}
+
+/* layout */
+body{position:relative;background:#000617}
+.spot{width:100%;height:1240px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg.jpg) no-repeat 50% 0}
+.content{width:100%;min-height:6000px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_cont_01.jpg) no-repeat 50% 0}
+.sec,.sec2,.sec3,.sec4,.sec5,.sec6{position:relative;margin:0 auto 150px;width:1010px;z-index:10}
+.sec3{position:relative;margin:0 auto 150px;width:1010px;z-index:1}
+
+#header{position:fixed;top:0;left:0;width:100%;height:70px;background:#000;z-index:100}
+#footer{position:absolute;left:0;bottom:0;width:100%;height:1000px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_btm.png) no-repeat 50% 0}
+#footer a{display:block;position:absolute;left:50%;bottom:50px;z-index:10;width:280px;height:20px;margin-left:-130px}
+.lnb{overflow:hidden;width:1010px;margin:0 auto;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_lnb_02.png) no-repeat}
+.lnb li{float:left;margin-left:1px}
+.lnb li:first-child{margin-left:0}
+.lnb a{display:block;width:159px;height:70px}
+.lnb a:hover,.lnb .on a{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_lnb_02.png) no-repeat}
+.lnb li.on .m1,.lnb .m1:hover{background-position:0 -72px}
+.lnb li.on .m2,.lnb .m2:hover{background-position:-161px -72px}
+.lnb li.on .m3,.lnb .m3:hover{background-position:-321px -72px}
+.lnb li.on .m4,.lnb .m4:hover{background-position:-481px -72px}
+.lnb li.on .m5,.lnb .m5:hover{background-position:-640px -72px}
+.lnb li.on .m6,.lnb .m6:hover{background-position:-800px -72px}
+
+/* spot */
+.btn_tera{position:absolute;top:101px;left:50%;margin-left:-125px;width:250px;height:99px}
+.btn_play{position:absolute;top:807px;left:50%;margin-left:-110px;width:200px;height:190px}
+
+/* 공통 */
+.dummy{position:absolute;top:-100px;left:0}
+.tab{overflow:hidden;position:absolute;left:0;}
+.tab li{float:left;margin-left:10px}
+.tab li:first-child{margin-left:0}
+.tab li a{display:block;height:39px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_tab_02.png) no-repeat}
+.sec .cont{clear:both}
+
+.skill{position:absolute;top:236px;left:235px}
+.skill dl{clear:both;margin-top:36px}
+.skill dl:after{display:block;clear:both;content:''}
+.skill dl dd{float:left;position:relative;margin-right:40px;height:54px}
+.skill dl dd a{overflow:hidden;display:block;width:202px;height:54px}
+.skill dl dd a:hover span{position:absolute;top:0;left:0;width:48px;height:48px;border:3px solid #00ffff;cursor:pointer}
+.skill dl dd div{display:none;position:absolute;top:60px;left:-4px;z-index:10}
+.skill dd:hover div{display:block}
+
+.img_wrap{padding-top:263px}
+.img_wrap ul{overflow:hidden;margin-top:9px;height:92px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec2_6.png) no-repeat}
+.img_wrap ul li{float:left;margin-right:16px}
+.img_wrap ul li a{display:block;width:178px;height:86px}
+.img_wrap ul li a:hover{border:3px solid #0064e7;margin-right:-6px} 
+.img_wrap ul li.on{border:3px solid #0064e7;margin-right:10px} 
+.img_wrap ul li.on a:hover{border:none;margin-right:0} 
+
+/* 레벨 확장 및 신규지역 */
+.sec .cont{height:950px}
+.sec .cont_v1{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec1_1.png) no-repeat}
+.sec .cont_v2{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec1_2.png) no-repeat}
+.sec .cont_v3{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec1_3.png) no-repeat}
+.sec .cont_v4{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec1_4.png) no-repeat;z-index:10}
+.sec .cont_v5{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec1_5.png) no-repeat}
+
+.sec .tab{top:290px}
+.sec .tab a.m1{width:99px;background-position:0 0}
+.sec .tab a.m2{width:152px;background-position:-109px 0}
+.sec .tab a.m3{width:152px;background-position:-271px 0}
+.sec .tab a.m4{width:101px;background-position:-433px 0}
+.sec .tab a.m5{width:119px;background-position:-544px 0}
+
+.sec .tab a.m1:hover,.sec .tab li.on a.m1{background-position:0 -41px}
+.sec .tab a.m2:hover,.sec .tab li.on a.m2{background-position:-109px -41px}
+.sec .tab a.m3:hover,.sec .tab li.on a.m3{background-position:-271px -41px}
+.sec .tab a.m4:hover,.sec .tab li.on a.m4{background-position:-433px -41px}
+.sec .tab a.m5:hover,.sec .tab li.on a.m5{background-position:-544px -41px}
+
+.sec .img_wrap{padding-top:454px}
+
+/* 시스템 개선 */
+.sec2 .cont{height:884px}
+.sec2 .cont_v1{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_1.png) no-repeat}
+.sec2 .cont_v2{height:1931px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_2_1.png) no-repeat}
+.sec2 .cont_v3{height:1439px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_3_1.png) no-repeat}
+.sec2 .cont_v4{height:1090px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_4_1.png) no-repeat}
+.sec2 .cont_v5{height:1162px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_5.png) no-repeat}
+.sec2 .cont_v6{height:862px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_6.png) no-repeat}
+.sec2 .cont_v7{height:1196px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec2_7_03.png) no-repeat}
+
+.sec2 .tab{top:116px}
+.sec2 .tab a.m1{width:139px;background-position:0 -82px}
+.sec2 .tab a.m2{width:117px;background-position:-149px -82px}
+.sec2 .tab a.m3{width:100px;background-position:-276px -82px}
+.sec2 .tab a.m4{width:90px;background-position:-386px -82px}
+.sec2 .tab a.m5{width:215px;background-position:-486px -82px}
+.sec2 .tab a.m6{width:120px;background-position:-711px -82px}
+.sec2 .tab a.m7{width:90px;background-position:-841px -82px}
+
+.sec2 .tab a.m1:hover,.sec2 .tab li.on a.m1{background-position:0 -123px}
+.sec2 .tab a.m2:hover,.sec2 .tab li.on a.m2{background-position:-149px -123px}
+.sec2 .tab a.m3:hover,.sec2 .tab li.on a.m3{background-position:-276px -123px}
+.sec2 .tab a.m4:hover,.sec2 .tab li.on a.m4{background-position:-386px -123px}
+.sec2 .tab a.m5:hover,.sec2 .tab li.on a.m5{background-position:-486px -123px}
+.sec2 .tab a.m6:hover,.sec2 .tab li.on a.m6{background-position:-711px -123px}
+.sec2 .tab a.m7:hover,.sec2 .tab li.on a.m7{background-position:-841px -123px}
+
+.sec2 .cont_v4 .skill dd div{width:386px}
+.sec2 .cont_v4 .skill .t1 div{height:307px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_1_1.png) no-repeat}
+.sec2 .cont_v4 .skill .t2 div{height:266px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_2.png) no-repeat}
+.sec2 .cont_v4 .skill .t3 div{height:387px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_3.png) no-repeat}
+.sec2 .cont_v4 .skill .t4 div{height:234px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_4.png) no-repeat}
+.sec2 .cont_v4 .skill .t5 div{height:263px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_5_1.png) no-repeat}
+.sec2 .cont_v4 .skill .t6 div{height:364px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_6.png) no-repeat}
+.sec2 .cont_v4 .skill .t7 div{height:243px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_7_2.png) no-repeat}
+.sec2 .cont_v4 .skill .t8 div{height:344px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_8.png) no-repeat}
+.sec2 .cont_v4 .skill .t9 div{height:378px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_9.png) no-repeat}
+.sec2 .cont_v4 .skill .t10 div{height:305px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_10.png) no-repeat}
+.sec2 .cont_v4 .skill .t11 div{height:307px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_11.png) no-repeat}
+.sec2 .cont_v4 .skill .t12 div{height:344px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_12.png) no-repeat}
+.sec2 .cont_v4 .skill .t13 div{height:254px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_13.png) no-repeat}
+.sec2 .cont_v4 .skill .t14 div{height:283px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_14.png) no-repeat}
+.sec2 .cont_v4 .skill .t15 div{height:287px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_15_2.png) no-repeat}
+.sec2 .cont_v4 .skill .t16 div{height:365px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_16.png) no-repeat}
+.sec2 .cont_v4 .skill .t17 div{height:282px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_17.png) no-repeat}
+.sec2 .cont_v4 .skill .t18 div{height:301px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_18_1.png) no-repeat}
+.sec2 .cont_v4 .skill .t19 div{height:343px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_19_1.png) no-repeat}
+.sec2 .cont_v4 .skill .t20 div{height:264px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_4_20_1.png) no-repeat}
+
+.sec2 .cont_v5 .skill{top:851px;left:350px}
+.sec2 .cont_v5 .skill dd div{width:884px;height:508px}
+.sec2 .cont_v5 .skill .t1 div{left:-300px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_5_1.png) no-repeat}
+.sec2 .cont_v5 .skill .t2 div{left:-527px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_5_2.png) no-repeat}
+.sec2 .cont_v5 .skill .t3 div{left:-300px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_5_3_01.png) no-repeat}
+.sec2 .cont_v5 .skill .t4 div{left:-300px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_5_4.png) no-repeat}
+.sec2 .cont_v5 .skill .t5 div{left:-527px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec2_5_5.png) no-repeat}
+
+/* 신규인던 */
+.sec3 .cont{height:940px}
+.sec3 .cont_v1{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec3_1.png) no-repeat}
+.sec3 .cont_v2{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec3_2.png) no-repeat}
+
+.sec3 .tab{top:116px}
+.sec3 .tab a.m1{width:141px;background-position:0 -164px}
+.sec3 .tab a.m2{width:137px;background-position:-152px -164px}
+.sec3 .tab a.m1:hover,.sec3 .tab li.on a.m1{background-position:0 -205px}
+.sec3 .tab a.m2:hover,.sec3 .tab li.on a.m2{background-position:-152px -205px}
+
+.sec3 .img_wrap{padding-top:343px}
+.sec3 .cont_v1 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec3_1.png) no-repeat}
+.sec3 .cont_v2 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec3_2.png) no-repeat}
+
+/* 상급인던 */
+.sec4 .cont{height:940px}
+.sec4 .cont_v1{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec4_1.png) no-repeat}
+.sec4 .cont_v2{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec4_2.png) no-repeat}
+.sec4 .cont_v3{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec4_3_02.png) no-repeat}
+.sec4 .cont_v4{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec4_4.png) no-repeat}
+.sec4 .cont_v5{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec4_5.png) no-repeat}
+    
+.sec4 .tab{top:116px}
+.sec4 .tab a.m1{width:153px;background-position:0 -246px}
+.sec4 .tab a.m2{width:126px;background-position:-163px -246px}
+.sec4 .tab a.m3{width:172px;background-position:-299px -246px}
+.sec4 .tab a.m4{width:112px;background-position:-481px -246px}
+.sec4 .tab a.m5{width:158px;background-position:-603px -246px}
+.sec4 .tab a.m1:hover,.sec4 .tab li.on a.m1{background-position:0 -287px}
+.sec4 .tab a.m2:hover,.sec4 .tab li.on a.m2{background-position:-163px -287px}
+.sec4 .tab a.m3:hover,.sec4 .tab li.on a.m3{background-position:-299px -287px}
+.sec4 .tab a.m4:hover,.sec4 .tab li.on a.m4{background-position:-481px -287px}
+.sec4 .tab a.m5:hover,.sec4 .tab li.on a.m5{background-position:-603px -287px}
+    
+.sec4 .img_wrap{padding-top:341px}
+.sec4 .cont_v1 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec4_1.png) no-repeat}
+.sec4 .cont_v2 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec4_2_1.png) no-repeat}
+.sec4 .cont_v3 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec4_3.png) no-repeat} 
+.sec4 .cont_v4 .img_wrap ul{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/tab_sec4_4_01.png) no-repeat} 
+
+/* 장비아이템 */
+.sec5{margin-bottom:0;padding-bottom:150px}
+.sec5 .cont{height:1922px} 
+.sec5 .cont_v1{height:2052px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec5_1_03.png) no-repeat} 
+.sec5 .cont_v2{height:1922px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec5_2_02.png) no-repeat}
+    
+.sec5 .tab{top:116px}
+.sec5 .tab a.m1{width:124px;background-position:-297px -164px}
+.sec5 .tab a.m2{width:126px;background-position:-431px -164px}
+.sec5 .tab a.m1:hover,.sec5 .tab li.on a.m1{background-position:-297px -205px}
+.sec5 .tab a.m2:hover,.sec5 .tab li.on a.m2{background-position:-431px -205px}
+
+.sec5 .cont_v1 .skill{top:272px;left:44px;width:968px}
+.sec5 .cont_v1 .skill dd{margin-bottom:12px}
+.sec5 .cont_v1 .skill dd div{width:298px}
+.sec5 .cont_v1 .skill .t1 div{height:632px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_1.png) no-repeat}
+.sec5 .cont_v1 .skill .t2 div{height:669px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_2.png) no-repeat}
+.sec5 .cont_v1 .skill .t3 div{height:616px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_3.png) no-repeat}
+.sec5 .cont_v1 .skill .t4 div{height:636px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_4.png) no-repeat}
+.sec5 .cont_v1 .skill .t5 div{height:622px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_5.png) no-repeat}
+.sec5 .cont_v1 .skill .t6 div{height:628px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_6.png) no-repeat}
+.sec5 .cont_v1 .skill .t7 div{height:674px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_7.png) no-repeat}
+.sec5 .cont_v1 .skill .t8 div{height:666px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_8.png) no-repeat}
+.sec5 .cont_v1 .skill .t9 div{height:618px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_9.png) no-repeat}
+
+.sec5 .cont_v1 .skill.v2{top:526px;left:44px;width:968px}
+.sec5 .cont_v1 .skill.v2 dd{margin-bottom:12px}
+.sec5 .cont_v1 .skill.v2 dd div{width:302px}
+.sec5 .cont_v1 .skill.v2 .t1 div{height:637px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_10.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t2 div{width:599px;height:556px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_11.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t3 div{height:580px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_12.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t4 div{left:-239px;height:446px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_13.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t5 div{height:638px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_14_2.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t6 div{height:560px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_15.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t7 div{height:571px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_16.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t8 div{left:-239px;height:445px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_17.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t9 div{height:641px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_18.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t10 div{width:598px;height:554px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_19.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t11 div{height:578px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_20.png) no-repeat}
+.sec5 .cont_v1 .skill.v2 .t12 div{left:-239px;height:446px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_21.png) no-repeat}
+
+.sec5 .cont_v1 .skill.v3{top:911px;left:44px;width:968px}
+.sec5 .cont_v1 .skill.v3 dd{margin-bottom:12px}
+.sec5 .cont_v1 .skill.v3 dd div{top:-660px;width:886px;height:660px}
+.sec5 .cont_v1 .skill.v3 .t1 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_22.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t2 div{left:-234px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_23.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t3 div{left:-487px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_24.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t4 div{left:-728px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_25.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t5 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_26.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t6 div{left:-234px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_27.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t7 div{left:-487px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_28.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t8 div{left:-728px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_29.png) no-repeat}
+.sec5 .cont_v1 .skill.v3 .t9 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_30.png) no-repeat}
+
+.sec5 .cont_v1 .skill.v4{top:1164px;left:44px;width:968px}
+.sec5 .cont_v1 .skill.v4 dd{margin-bottom:12px}
+.sec5 .cont_v1 .skill.v4 dd div{width:304px}
+.sec5 .cont_v1 .skill.v4 .t1 div{top:-652px;width:608px;height:652px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_31.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t2 div{top:-566px;width:608px;height:566px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_32.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t3 div{top:-582px;height:582px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_33.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t4 div{top:-459px;left:-240px;height:458px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_34_1.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t5 div{top:-654px;left:-48px;width:1196px;height:654px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_35.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t6 div{top:-570px;width:599px;height:570px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_36.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t7 div{top:-584px;height:584px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_37.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t8 div{top:-459px;left:-240px;height:458px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_38_1.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t9 div{top:-660px;width:906px;height:660px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_39.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t10 div{top:-570px;width:598px;height:570px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_40.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t11 div{top:-584px;height:584px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_41.png) no-repeat}
+.sec5 .cont_v1 .skill.v4 .t12 div{top:-459px;left:-240px;height:458px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_1_42_1.png) no-repeat}
+
+.sec5 .cont_v1 .skill.v5{top:1550px;left:44px;width:968px} 
+.sec5 .cont_v1 .skill.v6{top:1800px;left:44px;width:968px} 
+
+.sec5 .cont_v2 .skill{top:272px;left:44px;width:968px}
+.sec5 .cont_v2 .skill dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill dd div{width:300px;height:672px}
+.sec5 .cont_v2 .skill .t1 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_1.png) no-repeat}
+.sec5 .cont_v2 .skill .t2 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_2.png) no-repeat}
+.sec5 .cont_v2 .skill .t3 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_3.png) no-repeat}
+.sec5 .cont_v2 .skill .t4 div{left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_4.png) no-repeat}
+.sec5 .cont_v2 .skill .t5 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_5.png) no-repeat}
+.sec5 .cont_v2 .skill .t6 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_6.png) no-repeat}
+.sec5 .cont_v2 .skill .t7 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_7.png) no-repeat}
+.sec5 .cont_v2 .skill .t8 div{left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_8.png) no-repeat}
+.sec5 .cont_v2 .skill .t9 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_9.png) no-repeat}
+
+.sec5 .cont_v2 .skill.v2{top:524px;left:44px;width:968px}
+.sec5 .cont_v2 .skill.v2 dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill.v2 dd div{width:300px;height:675px}
+.sec5 .cont_v2 .skill.v2 .t1 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_10.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t2 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_11.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t3 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_12.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t4 div{left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_13.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t5 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_14.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t6 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_15.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t7 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_16.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t8 div{left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_17.png) no-repeat}
+.sec5 .cont_v2 .skill.v2 .t9 div{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_18.png) no-repeat}
+
+.sec5 .cont_v2 .skill.v3{top:780px;left:43px;width:968px}
+.sec5 .cont_v2 .skill.v3 dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill.v3 dd div{width:300px}
+.sec5 .cont_v2 .skill.v3 .t1 div{height:679px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_19_1.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t2 div{height:719px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_20_1.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t3 div{height:666px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_21_1.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t4 div{height:798px;left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_22_02.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t5 div{height:780px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_23_01.png) no-repeat}
+.sec5 .cont_v2 .skill.v3 .t6 div{height:681px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_24_1.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t7 div{height:718px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_25_1.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t8 div{height:845px;left:-237px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_26_02.png) no-repeat} 
+.sec5 .cont_v2 .skill.v3 .t9 div{height:671px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_27_1.png) no-repeat}
+
+.sec5 .cont_v2 .skill.v4{top:1166px;left:43px;width:968px}
+.sec5 .cont_v2 .skill.v4 dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill.v4 dd div{width:303px}
+.sec5 .cont_v2 .skill.v4 .t1 div{height:663px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_28.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t2 div{height:572px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_29.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t3 div{height:583px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_30.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t4 div{height:444px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_31_1.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t5 div{height:667px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_32.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t6 div{height:568px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_33.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t7 div{height:592px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_34.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t8 div{height:443px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_35_1.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t9 div{top:-669px;height:669px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_36.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t10 div{width:599px;height:570px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_37.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t11 div{height:585px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_38.png) no-repeat}
+.sec5 .cont_v2 .skill.v4 .t12 div{left:-237px;height:444px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_39_1.png) no-repeat}
+
+.sec5 .cont_v2 .skill.v5{top:1418px;left:43px;width:968px}
+.sec5 .cont_v2 .skill.v5 dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill.v5 dd div{width:305px}
+.sec5 .cont_v2 .skill.v5 .t1 div{top:-678px;width:600px;height:678px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_40.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t2 div{top:-599px;height:599px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_41.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t3 div{top:-599px;height:599px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_42.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t4 div{top:-457px;height:457px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_43.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t5 div{top:-682px;left:-40px;width:1203px;height:682px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_44.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t6 div{top:-597px;height:597px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_45.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t7 div{top:-596px;height:596px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_46.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t8 div{top:-444px;height:458px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_47_1.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t9 div{top:-680px;width:902px;height:680px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_48_01.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t10 div{top:-596px;width:600px;height:596px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_49.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t11 div{top:-601px;height:601px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_50.png) no-repeat}
+.sec5 .cont_v2 .skill.v5 .t12 div{top:-444px;left:-237px;height:458px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_51_1.png) no-repeat}
+
+.sec5 .cont_v2 .skill.v6{top:1670px;left:43px;width:968px}
+.sec5 .cont_v2 .skill.v6 dd{margin-bottom:12px}
+.sec5 .cont_v2 .skill.v6 dd div{width:304px}
+.sec5 .cont_v2 .skill.v6 .t1 div{top:-690px;width:599px;height:687px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_52_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t2 div{top:-615px;height:614px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_53_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t3 div{top:-630px;height:626px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_54_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t4 div{top:-503px;height:503px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_55.png) no-repeat}
+.sec5 .cont_v2 .skill.v6 .t5 div{top:-690px;left:-45px;width:1203px;height:691px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_56_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t6 div{top:-615px;height:615px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_57_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t7 div{top:-607px;height:607px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_58_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t8 div{top:-503px;height:503px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_59.png) no-repeat}
+.sec5 .cont_v2 .skill.v6 .t9 div{top:-700px;width:897px;height:701px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_60_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t10 div{top:-610px;width:601px;height:611px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_61_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t11 div{top:-620px;height:622px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_62_01.png) no-repeat} 
+.sec5 .cont_v2 .skill.v6 .t12 div{top:-502px;height:502px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/t_sec5_2_63.png) no-repeat}
+
+/* 길드경쟁 */ 
+.sec6{margin-bottom:0;padding-bottom:150px} 
+/*.sec6 .cont{height:1972px}*/ 
+.sec6 .cont_v1{height:2451px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_1.png) no-repeat} 
+.sec6 .cont_v2{background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2.png) no-repeat} 
+.sec6 .cont_v3{height:2360px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_3.png) no-repeat} 
+  
+.sec6 .tab{top:113px} 
+.sec6 .tab a.m1{width:142px;background-position:0 -347px} 
+.sec6 .tab a.m2{width:102px;background-position:-152px -347px} 
+.sec6 .tab a.m3{width:114px;background-position:-264px -347px} 
+.sec6 .tab a.m1:hover,.sec6 .tab li.on a.m1{background-position:0 -388px} 
+.sec6 .tab a.m2:hover,.sec6 .tab li.on a.m2{background-position:-152px -388px} 
+.sec6 .tab a.m3:hover,.sec6 .tab li.on a.m3{background-position:-264px -388px} 
+  
+.sec6 .subtab{padding-top:156px} 
+.sec6 .subtab h4 a{display:block;width:960px;height:35px;margin-top:3px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_subtab.png) no-repeat} 
+.sec6 .subtab a.sm1{background-position:0 0} 
+.sec6 .subtab a.sm2{background-position:0 -38px} 
+.sec6 .subtab a.sm3{background-position:0 -76px} 
+.sec6 .subtab a.sm4{background-position:0 -114px} 
+.sec6 .subtab a.sm5{background-position:0 -152px} 
+.sec6 .subtab a.sm6{background-position:0 -190px} 
+.sec6 .subtab a.sm7{background-position:0 -228px} 
+.sec6 .subtab a.sm8{background-position:0 -266px} 
+.sec6 .subtab a.sm1:hover,.sec6 .subtab h4.on a.sm1{background-position:0 -304px} 
+.sec6 .subtab a.sm2:hover,.sec6 .subtab h4.on a.sm2{background-position:0 -342px} 
+.sec6 .subtab a.sm3:hover,.sec6 .subtab h4.on a.sm3{background-position:0 -380px} 
+.sec6 .subtab a.sm4:hover,.sec6 .subtab h4.on a.sm4{background-position:0 -418px} 
+.sec6 .subtab a.sm5:hover,.sec6 .subtab h4.on a.sm5{background-position:0 -456px} 
+.sec6 .subtab a.sm6:hover,.sec6 .subtab h4.on a.sm6{background-position:0 -494px} 
+.sec6 .subtab a.sm7:hover,.sec6 .subtab h4.on a.sm7{background-position:0 -532px} 
+.sec6 .subtab a.sm8:hover,.sec6 .subtab h4.on a.sm8{background-position:0 -570px} 
+  
+.sec6 .img_wrap1{padding-top:314px} 
+.sec6 .img_wrap2{padding-top:355px} 
+.sec6 .img_wrap3{padding-top:183px} 
+.sec6 .img_wrap4{padding-top:214px} 
+.sec6 .img_wrap5{padding-top:515px} 
+.sec6 .img_wrap6{padding-top:160px} 
+.sec6 .img_wrap7{padding-top:116px} 
+.sec6 .img_wrap8{padding-top:98px} 
+.sec6 .img_wrap9{padding-top:50px} 
+  
+.sec6 .cont_v2_1{margin-top:19px;} 
+.sec6 .cont_v2_1 li{padding-top:5px} 
+.sec6 .cont_v2_1 li:first-child{padding:0} 
+.sec6 .cont_v2_2{height:54px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_2.png) no-repeat} 
+.sec6 .cont_v2_3{height:639px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_3.png) no-repeat} 
+.sec6 .cont_v2_4{height:1004px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_4.png) no-repeat} 
+.sec6 .cont_v2_5{height:2346px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_5.png) no-repeat} 
+.sec6 .cont_v2_6{height:1629px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_6.png) no-repeat} 
+.sec6 .cont_v2_7{height:3591px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_7.png) no-repeat} 
+.sec6 .cont_v2_8{height:1146px;margin-top:19px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/bg_sec6_2_8_01.png) no-repeat} 
+
+/* 동영상팝업 */
+.pop_container{position:fixed;top:50%;left:50%;margin:-230px 0 0 -433px;padding:7px 7px;width:853px;height:549px;background:#000;z-index:150}
+.pop_container .pop_tit{display:block;margin:6px 0 0 6px;width:155px;height:17px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_tab_02.png) no-repeat 0 -328px}
+.pop_container .video{margin-top:15px}
+.pop_container .btn_cls{position:absolute;top:14px;right:17px;width:17px;height:17px;background:url(http://images.hangame.co.kr/hangame/tera/obt/event/2014/0715_updatePart7/sp_tab_02.png) no-repeat -157px -328px} 
+.dim{display:block;position:absolute;z-index:110;top:0;left:0;width:100%;height:100%;background:#000;opacity:0.7;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70)} 

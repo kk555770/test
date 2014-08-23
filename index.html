@@ -1,1 +1,33 @@
-hi~~~~
+<!DOCTYPE html>
+<html lang="en">
+  <head lang="zh-TW">
+    <meta charset="utf-8">
+    <title>TERA</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+      $(function() {
+        $( "input[type=submit], a, button" )
+          .button()
+          .click(function( event ) {
+            event.preventDefault();
+        });
+      });
+    </script>
+
+  </head>
+  
+  <body>
+
+    <button onclick=page1>全新挑戰</button>
+    <input type="submit" value="A submit button">
+    <div class="container">               
+      <p class= "word"></p>
+    </div>
+    
+  </body>
+</html>
