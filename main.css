@@ -14,8 +14,8 @@ body {
 
 .container {
 
-  width:100px;
-  height: 930px;
+  width:200px;
+  height: 860px;
   margin:0px auto ;
 
 }
@@ -28,5 +28,11 @@ body {
 
 a {
   color:#EEEEEE;
+  font-size:150%;
+  font-family:"標楷體";
+}
 
+.img{
+ width:50px;
+ height:330px;
 }
